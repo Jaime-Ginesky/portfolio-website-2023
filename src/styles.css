@@ -61,12 +61,19 @@
   }
   h2 {
     color:steelblue;
-    opacity: 60%;
+    opacity: 80%;
     font-size: 24px;
     font-family: "Cormorant Garamond", serif;
     padding-bottom: 30px;
   }
-  p {
+  h3 {
+    color:#4682B4;
+    font-size: 20px;
+    font-family: "Cormorant Garamond", serif;
+    padding-bottom: 30px;
+  }
+  
+    p {
     font-family: "Poppins", sans-serif;
     font-size: 12px;
     line-height: 2;
@@ -131,6 +138,30 @@
     text-decoration: none;
     color: steelblue;
   }
+
+  .slide-up {
+    display: grid;
+    grid-gap: 5px;
+    justify-content: center;
+    align-content: center;
+    width:100%;
+    overflow:hidden;
+    margin-left: 400px;
+    max-width: 530px;
+    position: absolute;
+ }
+
+.slide-up h3 {
+    text-align: center;
+  animation:2s slide-down 2s forwards;
+   transform:translateY(270%);
+}
+@keyframes slide-down {
+to {
+   transform:translateX(0%);
+}
+} 
+
   .slide-down {
     width:100%;
     overflow:hidden;
@@ -399,7 +430,7 @@
       color: steelblue;
     }
     
-     .main-container h3 {
+     .main-container {
        text-align: center;
        font-size: 15px;
        margin: 1px;
@@ -410,6 +441,8 @@
       margin-left: 20px;
       max-width:400px;
     }
+
+    
     
     .slide-down h2 {
       color: var(--image-text-color);
@@ -449,4 +482,4 @@
        font-size: 60px;
        margin-bottom: 20px;
      }
-    }
+  }
