@@ -22,6 +22,7 @@ if (darkMode === "enabled") {
 }
 
 toggleBtn.addEventListener("click", (e) => {
+    e.preventDefault();
     darkMode = localStorage.getItem("dark-mode");
     if (darkMode === "disabled") {
         enableDarkMode();
@@ -33,17 +34,21 @@ toggleBtn.addEventListener("click", (e) => {
   // Function to create a card
   function createCard(title, description, link) {
     const card = document.createElement('div');
-    card.classList.add('imgCard');
+    card.classList.add('container','imgCard','contentC', 'content', 'card:hover','dark-mode-theme');
     // Add your desired card class here
+    
+    const contentElement = document.createElement('content');
+    contentElement.classList.add('contentC::before','card:hover','content');
 
-    const titleElement = document.createElement('h4');
+    const titleElement = document.createElement('h6');
     titleElement.textContent = title;
-
-    const contentElement = document.createElement('div');
-    contentElement.classList.add('content');
-
+    // titleElement.classList.add('h6');
+    titleElement.classList.add('h6','contentC','imgC');
+    
     const descriptionElement = document.createElement('p');
     descriptionElement.textContent = description;
+    descriptionElement.classList.add('p')
+    // descriptionElement.classList.add('imgCard','content','contentC');
 
     const linkElement = document.createElement('a');
     linkElement.href = link;
@@ -54,6 +59,7 @@ toggleBtn.addEventListener("click", (e) => {
     contentElement.appendChild(descriptionElement);
     contentElement.appendChild(linkElement);
 
+    
     card.appendChild(titleElement);
     card.appendChild(contentElement);
 
