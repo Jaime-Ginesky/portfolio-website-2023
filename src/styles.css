@@ -444,14 +444,33 @@ to {
        font-size: 15px;
        margin: 1px;
      }
+
+     .slide-up {
+        position: absolute;
+        width:100%;
+        overflow:hidden;
+        margin-left: 20px;
+        max-width:400px;
+        margin-top: -80px;
+      }
+      
+      .slide-up h3 {
+        text-align: center;
+        color: var(--image-text-color);
+        animation:2s slide-up 2s forwards;
+           transform:translateY(-370%);
+      }
+      @keyframes slide-up {
+        to {
+          transform:translateX(0%);
+        }
+      }
      .slide-down {
       width:100%;
       overflow:hidden;
       margin-left: 20px;
       max-width:400px;
     }
-
-    
     
     .slide-down h2 {
       color: var(--image-text-color);
