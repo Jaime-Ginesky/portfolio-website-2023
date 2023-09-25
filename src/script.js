@@ -31,7 +31,7 @@ toggleBtn.addEventListener("click", (e) => {
     }
 });
 
-  // Function to create a card
+  // Function to create a card for project menu
   function createCard(title, description, link) {
     const card = document.createElement('div');
     card.classList.add('container','imgCard','contentC', 'content', 'card:hover','dark-mode-theme');

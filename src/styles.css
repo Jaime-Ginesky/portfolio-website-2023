@@ -138,8 +138,8 @@
     text-decoration: none;
     color: steelblue;
   }
-
-  .slide-up {
+/* slide text feature from h1 */
+  /* .slide-up {
     display: grid;
     grid-gap: 5px;
     justify-content: center;
@@ -151,7 +151,7 @@
     position: absolute;
  }
 
-.slide-up h3 {
+.slide-up h3{
     text-align: center;
   animation:2s slide-down 2s forwards;
    transform:translateY(270%);
@@ -160,13 +160,32 @@
 to {
    transform:translateX(0%);
 }
-} 
+}  */
+
+ .slide-up {
+    position: absolute;
+    width:100%;
+    overflow:hidden;
+    margin-left: 300px;
+    max-width:530px;
+ }
+
+ .slide-up h3 {
+    text-align: center;
+    animation:2s slide-up 2s forwards;
+       transform:translateY(270%);
+  }
+  @keyframes slide-up {
+    to {
+      transform:translateX(-20%);
+    }
+ }
 
   .slide-down {
     width:100%;
     overflow:hidden;
     margin-left: 450px;
-    max-width:500px;
+    max-width:600px;
   }
   
   .slide-down h2 {
@@ -176,7 +195,7 @@ to {
   }
   @keyframes slide-down {
     to {
-      transform:translateX(0%);
+      transform:translateX(10%);
     }
   }
   .container {
@@ -252,7 +271,7 @@ to {
     transform: scale(1);
     transition: transform 0.5s ease-in-out;
     transform-origin: left;
-    background-color: #000;
+    background-color: rgb(58, 55, 64);
   }
  
   .container .card .contentC {
