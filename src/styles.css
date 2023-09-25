@@ -414,12 +414,19 @@ to {
        font-size: 20px;
        margin: 20px;
      }
-     .dark-mode-toggle {
+     /* .dark-mode-toggle {
       background: #7693B6;
       color: steelblue;
       box-shadow: none;
       border: 0px;
-    }
+    } */
+    .nav-item .dark-mode-toggle {
+        margin-left: 20px;
+        background: #7693B6;
+        color: steelblue;
+        box-shadow: none;
+        border: 0px;
+      }
      a,
      footer {
        text-align: center;
