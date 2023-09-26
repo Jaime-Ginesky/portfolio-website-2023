@@ -49,28 +49,28 @@
     background: var(--image-text-color);
     color: var(--background-color);
   }
-  .dark-mode-theme h1 {
+  /* .dark-mode-theme h1 {
     color: white;
-  }
+  } */
   h1 {
     color: var(--image-text-color);
     opacity: 80%;
-    font-size: 150px;
-    font-weight: 100;
-    font-family: "Poppins", sans-serif;
+    font-size: 180px;
+    font-weight: 500;
+    font-family: 'Poppins';
     padding-top: 80px;
   }
   h2 {
-    color:steelblue;
-    opacity: 80%;
+    color: var(--secondary-text-color);
+    opacity: 60%;
     font-size: 24px;
-    font-family: "Cormorant Garamond", serif;
+    font-family:  "Poppins", sans-serif;
     padding-bottom: 30px;
   }
   h3 {
-    color:#4682B4;
+    color: var(--secondary-text-color);
     font-size: 20px;
-    font-family: "Cormorant Garamond", serif;
+    font-family:  "Poppins", sans-serif;
     padding-bottom: 30px;
   }
   
@@ -178,7 +178,7 @@ to {
   }
   @keyframes slide-up {
     to {
-      transform:translateX(-20%);
+      transform:translateX(0%);
     }
  }
 
@@ -186,7 +186,7 @@ to {
     width:100%;
     overflow:hidden;
     margin-left: 450px;
-    max-width:600px;
+    max-width:900px;
   }
   
   .slide-down h2 {
@@ -196,7 +196,7 @@ to {
   }
   @keyframes slide-down {
     to {
-      transform:translateX(10%);
+      transform:translateX(00%);
     }
   }
   .container {
@@ -308,10 +308,10 @@ to {
     opacity: 58%;
   }
   
-  .main-container h3 {
+  /* .main-container h3 {
     margin-top: 90px;
-    color:#98ABC3;
-  }
+    color: var(--secondary-text-color);
+  } */
   .about-container {
     color: var(--image-text-color);
     max-width: 1000px;
@@ -355,6 +355,21 @@ to {
     padding-bottom: 60px;
     color:var(--image-text-color);
     }
+   .dark-mode-theme h1 {
+        color:#232020;
+        opacity: 60%;
+    }
+
+    .dark-mode-theme .main-container h3{ 
+        padding: 60px;
+        color: #fff;
+   }
+
+   .dark-mode-theme .main-container h2{ 
+    color: #212529;
+}
+
+
   .dark-mode-theme .contact-container .contact a {
     text-decoration: none;
     color: var(--background-color);
