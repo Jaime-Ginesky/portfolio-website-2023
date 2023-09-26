@@ -2,8 +2,8 @@
     --background-color: #dbdfdf;
     --secondary-text-color: #909999;
     --image-text-color: #323358;
-  }
-  
+ }
+
   * {
     margin: 0;
     padding: 0;
@@ -45,13 +45,14 @@
     width: 100vw;
     height: 100vh;
   }
+
+  /* background/text in dark mode */
   .dark-mode-theme {
     background: var(--image-text-color);
     color: var(--background-color);
   }
-  /* .dark-mode-theme h1 {
-    color: white;
-  } */
+
+  /* main text elements */
   h1 {
     color: var(--image-text-color);
     opacity: 80%;
@@ -94,6 +95,8 @@
     text-align: center;
     color: var(--image-text-color);
     }
+
+    /* all footer css  */
   footer {
     margin: 5px 0;
     text-align: center;
@@ -163,12 +166,14 @@ to {
 }
 }  */
 
+/* slide effect on header */
+
  .slide-up {
     position: absolute;
     width:100%;
     overflow:hidden;
-    margin-left: 300px;
     max-width:530px;
+    margin: 70px 0 0 400px;
  }
 
  .slide-up h3 {
@@ -185,7 +190,7 @@ to {
   .slide-down {
     width:100%;
     overflow:hidden;
-    margin-left: 450px;
+    margin-left: 250px;
     max-width:900px;
   }
   
@@ -196,9 +201,11 @@ to {
   }
   @keyframes slide-down {
     to {
-      transform:translateX(00%);
+      transform:translateX(0%);
     }
   }
+
+  /* projects container spheres */
   .container {
     position: relative;
     display: flex;
@@ -299,6 +306,7 @@ to {
     transition-delay: 0.5s;
   }
   
+  /* about page css */
   .about-portrait {
     border: 3px solid #323358;
     border-radius: 100px;
@@ -336,6 +344,8 @@ to {
     color: cadetblue;
     text-align: center;
   }
+
+  /* contact page css */
   .contact-container .contact a {
     text-decoration: none;
     color: var(--image-text-color);
@@ -355,6 +365,8 @@ to {
     padding-bottom: 60px;
     color:var(--image-text-color);
     }
+
+    /* dark mode styling */
    .dark-mode-theme h1 {
         color:#232020;
         opacity: 60%;
@@ -388,6 +400,7 @@ to {
       color: steelblue;
     }
   
+    /* buttons */
   .button {
     text-decoration: none;
     color: var(--image-text-color);
