@@ -40,6 +40,7 @@
   .navbar {
     max-height: 50px;
   }
+
   #theme {
     width: 100vw;
     height: 100vh;
@@ -444,6 +445,9 @@ to {
       border: 0px;
       background: #212529;
       color: steelblue;
+    }
+     li a {
+        color:#7693B6
     }
     
      .main-container {
