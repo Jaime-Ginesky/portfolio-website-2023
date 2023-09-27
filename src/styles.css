@@ -488,16 +488,16 @@ to {
         position: absolute;
         width:100%;
         overflow:hidden;
-        margin-left: 20px;
+        margin-left: 0px;
         max-width:400px;
-        margin-top: -80px;
+        margin-top: 0px;
       }
       
       .slide-up h3 {
         text-align: center;
         color: var(--image-text-color);
         animation:2s slide-up 2s forwards;
-           transform:translateY(-370%);
+           transform:translateY(270%);
       }
       @keyframes slide-up {
         to {
@@ -508,10 +508,11 @@ to {
       width:100%;
       overflow:hidden;
       margin-left: 20px;
-      max-width:400px;
+      max-width:800px;
     }
     
     .slide-down h2 {
+        text-align: center;
       color: var(--image-text-color);
       animation:2s slide-down 2s forwards;
          transform:translateY(-100%);
