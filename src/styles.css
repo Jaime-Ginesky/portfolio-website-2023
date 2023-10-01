@@ -3,13 +3,16 @@
     --secondary-text-color: #909999;
     --image-text-color: #323358;
  }
+ html {
+  box-sizing: border-box;
+}
 
-  * {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-family: "Cormorant Garamond", serif; */
-  }
+*, *::before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* font-family: "Cormorant Garamond", serif; */
+}
   /* html {
     height: 100%;
   } */
@@ -19,6 +22,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
+    max-width: 100%;
     /* min-width: 100vw;
     min-height: auto; */
     /* width: 100%;
@@ -456,7 +460,7 @@ to {
    box-shadow: 0 5px 15px;
   }
   
-  @media only screen and (max-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1199.98px){
     .main-container h1 {
      font-size: 20px;
      text-align: center;
@@ -511,6 +515,8 @@ to {
        text-align: center;
        font-size: 15px;
        margin: 1px;
+       width: 95%;
+       min-width: 900px;
      }
 
      .slide-up {

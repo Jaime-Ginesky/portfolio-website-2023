@@ -33,7 +33,7 @@ toggleBtn.addEventListener("click", (e) => {
 
   // Function to create a card for project menu
   function createCard(title, description, link) {
-    const card = document.createElement('div');
+    const card = document.createElement('article');
     card.classList.add('container','imgCard','contentC', 'content', 'card:hover','dark-mode-theme');
     // Add your desired card class here
     
