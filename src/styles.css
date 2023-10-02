@@ -37,7 +37,7 @@
   }
   .navigation-container {
     background: var(--image-text-color);
-    height: 70px; 
+    height: 45px; 
     width: 100%; 
     display: flex; 
     justify-content: space-between; 
@@ -46,31 +46,34 @@
 
   .brand {
     height: 100%; 
-    width: 70px; 
-    padding: 25px; 
+    width: 70px;
+    padding: 5px 15px; 
+    font-size: 20px;
+    /* padding: 25px;  */
+    color:#dbdfdf;
   }
   .nav-links {
-    padding: 10px 15px;
+    padding: 5px 15px;
     cursor: pointer;
   }
   .nav-item {
-    padding: 10px 15px;
+    padding: 5px 15px;
     cursor: pointer;
   }
   
-  
   #toggle-btn {
-    padding: 0.5em;
+    padding: 5px 15px;
+    /* padding: .5em; */
     font-weight: 800;
     margin-right: 30px;
     box-shadow: none;
     border: 0px;
-    color: steelblue;
+    color:#dbdfdf;
   }
   #toggle-btn:hover {
     cursor: pointer;
     opacity: 0.8;
-    color:#909999;
+    color: steelblue;
   }
   .dark-mode-toggle {
     background: none;
@@ -80,6 +83,7 @@
     /* box-shadow: none; */
     border: 0px;
   }
+
 
   /* .navbar {
     max-height: 50px;
@@ -196,12 +200,7 @@
     color: steelblue;
   }
 
-  .nav-link {
-    color:steelblue;
-  }
-  .nav-link:hover {
-    color:#909999;
-  }
+  
 /* slide text feature from h1 */
   /* .slide-up {
     display: grid;
@@ -489,7 +488,7 @@ to {
    box-shadow: 0 5px 15px;
   }
   
-  @media (min-width: 767px) and (max-width: 1199.98px) {
+  @media (min-width: 767px) {
     .main-container h1 {
      font-size: 20px;
      text-align: center;
