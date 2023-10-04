@@ -22,15 +22,15 @@
     background: var(--background-color);
   }
    /* main text elements */
-   h1 {
-    color: var(--image-text-color);
+   .main-container h1 {
+    color:var(--image-text-color);
     opacity: 80%;
     font-size: 150px;
     font-weight: 500;
     font-family: 'Poppins';
     padding-top: 80px;
   }
-  h2 {
+   h2 {
     color: var(--secondary-text-color);
     opacity: 60%;
     font-size: 24px;
@@ -62,7 +62,7 @@
     font-family: "Cormorant Garamond", serif;
     font-size: 20px;
   }
-  h7 {
+  .h7 {
     text-align: center;
     color: var(--image-text-color);
     } 
@@ -288,6 +288,7 @@
     flex-wrap: wrap;
     max-width: 1500px;
   }
+  /* individual cards */
   .container .card {
     position: relative;
     width: 320px;
@@ -296,17 +297,17 @@
     overflow: hidden;
     border-radius: 300px;
   }
- 
+  /* background and content  */
   .container .card .imgC,
   .container .card .contentC {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%
+    height: 100%;
   }
   
-   
+   /* background on card */
   .container .card .imgC {
     position: absolute;
     top: 0;
@@ -315,9 +316,9 @@
     height: 100%;
     object-fit: cover;
     background-image: radial-gradient(azure, rgb(58, 55, 64));
-    opacity: 35%;
+    opacity: 90%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     font-size: 1.3em;
     text-transform: uppercase;
@@ -330,11 +331,12 @@
   .dark-mode-theme, .container .card .imgS {
     background-image: radial-gradient(azure, rgb(58, 55, 64));
   } */
-  .dark-mode-theme, .container .card .imgC {
+  /* dark mode background on card */
+  .dark-mode-theme .container .card .imgC {
     background-image: radial-gradient(azure, rgb(58, 55, 64));
   }
   
-  
+  /* hidden desciption and link text before hover */
   .container .card .contentC::before {
     content: "";
     position: absolute;
@@ -344,28 +346,29 @@
     height: 100%;
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
-    transform-origin: right;
-    transition-delay: 0.2s;
+    transform-origin: left;
+    transition-delay: 0.5s;
   }
   
- 
+ /* hidden description and link text on hover */
   .container .card:hover .contentC::before {
     transform: scale(1);
     transition: transform 0.5s ease-in-out;
     transform-origin: left;
     background-color: rgb(58, 55, 64);
   }
- 
+    /* project title name */
   .container .card .contentC {
     display: flex;
     justify-content: center;
     align-items: center;
   }
- 
+  /* descriptive text and link after slide over */
   .container .card .contentC p {
     color:#98ABC3;
   }
  
+  /* project title card */
   .container .card  .contentC .content {
     position: relative;
     padding: 30px;
@@ -373,9 +376,9 @@
     transition: 0.5s;
     transform: translateX(-300px);
     transition-delay: 0s;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
- 
+  /* project title card on hover */
   .container .card:hover .contentC .content {
     transform: translateX(0px);
     transition-delay: 0.5s;
