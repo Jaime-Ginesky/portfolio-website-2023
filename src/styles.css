@@ -369,6 +369,7 @@
   }
   .button-link a:hover {
     background-color: var(--image-text-color);
+    opacity:80%;
     box-shadow: 0 5px 15px var(--image-text-color);
   }
   
