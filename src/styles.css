@@ -17,17 +17,19 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
+    height:100vh;
     /* height: 100vh; */
     /* max-width: 100%; */
     background: var(--background-color);
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
   
     /* .main-container {
       width: 100%;
       height:auto;
     } */
+
   
   .main-container h3 {
     padding-top: 30px;
@@ -42,7 +44,7 @@
   .main-container h1 {
     color: var(--image-text-color);
     opacity: 80%;
-    font-size: 100px;
+    font-size: 140px;
     font-family: "Poppins";
     font-weight: 500;
     text-align: center;
@@ -53,9 +55,18 @@
     opacity: 80%;
     font-size: 20px;
     font-family: "Poppins", sans-serif;
-    max-width: 1000px;
+    overflow: hidden;
+    /* max-width: 1000px; */
     width: 100vw; 
     text-align: center;
+    animation:2s slide-down 2s forwards;
+    transform:translateY(-100%);
+}
+@keyframes slide-down {
+ to {
+   transform:translateX(0%);
+ }
+} 
     /* margin: auto; */
     /* display: flex;
     align-content: center;
@@ -67,23 +78,22 @@
     overflow:hidden;
   } */
 
-  .slide-down h2 {
+  /* .slide-down h2 {
     /* margin-left: auto;
     margin-right: auto;
     max-width: 1000px; */
-    animation:2s slide-down 2s forwards;
+    /* animation:2s slide-down 2s forwards;
        transform:translateY(-100%);
   }
   @keyframes slide-down {
     to {
       transform:translateX(0%);
     }
-  } 
-}
+  }  */ 
   
     p {
     font-family: "Poppins", sans-serif;
-    font-size: 12px;
+    font-size: 9px;
     line-height: 2;
     color: steelblue;
     text-align: center;
@@ -95,6 +105,7 @@
     color: var(--image-text-color);
     text-align: center;
     font-family: "Cormorant Garamond", serif;
+    font-weight: 200;
     font-size: 20px;
   }
   .h7 {
@@ -233,8 +244,8 @@
   /* individual cards */
   .container .card {
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 250px;
+    height: 250px;
     margin: 20px; 
     overflow: hidden;
     border-radius: 300px;
@@ -450,12 +461,24 @@
   }
 
   
-  @media (min-width: 325px) {
+  @media (min-width: 325px) and (max-width: 767px){
      h1 {
-     text-align: center;
-     font-size: 50px;
+     font-size: 40px;
      letter-spacing: 7px;
-     padding: 30px;
+     padding-bottom: 20px;
+     color: var(--image-text-color);
+     opacity: 60%;
+     width: 100vw;
+    }
+    /* h2 {
+      text-align: center;
+      color: #212529;
+      opacity: 80%;
+    } */
+
+    h3 {
+      color: #212529;
+      opacity: 80%;
     }
 
      h4,
@@ -472,6 +495,26 @@
       width: 95%;
       /* min-width: 900px;  */
     } 
+    .slide-down {
+      width:100%;
+      overflow:hidden;
+      margin-left: 20px;
+      text-align: center;
+    }
+    
+    .slide-down h2 {
+        text-align: center;
+
+        color: #212529;
+        opacity: 80%;
+      animation:2s slide-down 2s forwards;
+         transform:translateY(-100%);
+    }
+    @keyframes slide-down {
+      to {
+        transform:translateX(0%);
+      }
+    }
 
      /* #navbarText {
       display: flex;
@@ -493,11 +536,17 @@
         border: 0px;
       }
       .nav-links {
-        /* display: flex;
-        align-items: center; */
-      text-align: center;
-      margin:0 auto;
+      margin-top: 15px;  
+      display: flex;
+      align-items:center;
+      justify-content:space-evenly;
       }
+
+      .container .card .contentC p {
+        color:#98ABC3;
+        font-size: 8px;
+      }
+
      a,
      footer {
        text-align: center;
@@ -519,7 +568,7 @@
     }
 
   
-     .slide-up {
+     /* .slide-up {
         position: absolute;
         width:100%;
         overflow:hidden;
@@ -530,7 +579,7 @@
       
       .slide-up h3 {
         /* text-align: center; */
-        color: var(--image-text-color);
+        /* color: var(--image-text-color);
         animation:2s slide-up 2s forwards;
            transform:translateY(270%);
       }
@@ -538,25 +587,8 @@
         to {
           transform:translateX(0%);
         }
-      }
-     .slide-down {
-      width:100%;
-      overflow:hidden;
-      margin-left: 20px;
-      max-width:800px;
-    }
-    
-    .slide-down h2 {
-        text-align: center;
-      color: var(--image-text-color);
-      animation:2s slide-down 2s forwards;
-         transform:translateY(-100%);
-    }
-    @keyframes slide-down {
-      to {
-        transform:translateX(0%);
-      }
-    }
+      } */ 
+
    
      .about-container {
        text-align: center;
@@ -585,4 +617,5 @@
        font-size: 60px;
        margin-bottom: 20px;
      }
+
   }
