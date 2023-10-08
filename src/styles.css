@@ -477,6 +477,15 @@
     .container {
       font-size: 1rem;
     }
+
+    .container .card {
+      position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem; 
+    overflow: hidden;
+    border-radius: 20rem;
+    }
   
     /* .dark-mode-theme .navigation-container {
       background-color: var(--image-text-color);
@@ -501,7 +510,7 @@
     .nav-links {
       text-decoration: none;
     }
-    
+
      h1 {
      font-size: 3rem;
      letter-spacing: 7px;
