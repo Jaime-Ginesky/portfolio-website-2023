@@ -27,6 +27,7 @@
   /* main container and slide down */
   .main-container h3 {
     padding-top: 30px;
+    padding-bottom: 60px;
     color:#212529;
     opacity: 80%;
     font-family: "Poppins", sans-serif;
@@ -125,6 +126,7 @@
   .nav-item {
     padding: 5px 15px;
     cursor: pointer;
+    text-decoration: none;
   }
 
   /* dark mode */
@@ -265,12 +267,6 @@
     letter-spacing: 1px;
   }
   
-  /* .dark-mode-theme, .container .card .imgW {
-    background-image: radial-gradient(azure, rgb(58, 55, 64));
-  }
-  .dark-mode-theme, .container .card .imgS {
-    background-image: radial-gradient(azure, rgb(58, 55, 64));
-  } */
   /* dark mode background on card */
   .dark-mode-theme .container .card .imgC {
     /* background-image: radial-gradient(azure, rgb(58, 55, 64));
@@ -457,11 +453,57 @@
    color: var(--background-color);
    box-shadow: 0 5px 15px;
   }
+}
+
+  
+  @media (min-width: 325px) {
+
+  
+    .navigation-container {
+      background: var(--image-text-color);
+      opacity: 80%;
+      height: 3rem; 
+      width: 100%; 
+      display: flex; 
+      justify-content: space-between; 
+      margin-bottom: 2rem; 
+    }
+    ul {
+      display: flex;
+      align-items: end;
+      list-style-type: none;
+      text-decoration: none;
+    }
+    .container {
+      font-size: 1rem;
+    }
+  
+    /* .dark-mode-theme .navigation-container {
+      background-color: var(--image-text-color);
+      opacity: 100%;
+    } */
+  
+    .brand {
+      height: 100%; 
+      width: 70px;
+      padding: 5px 15px; 
+      font-size: 1.5rem;
+      color:#dbdfdf;
+      text-decoration: none;
+    }
   
   
-  @media (min-width: 325px) and (max-width: 767px) {
+    .nav-item {
+      padding: 1rem 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .nav-links {
+      text-decoration: none;
+    }
+    
      h1 {
-     font-size: 40px;
+     font-size: 3rem;
      letter-spacing: 7px;
      padding-bottom: 20px;
      color: var(--image-text-color);
@@ -475,6 +517,7 @@
     } */
 
     h3 {
+      font-size: 2rem;
       color: #212529;
       opacity: 80%;
     }
@@ -483,26 +526,26 @@
      h5,
      h6 {
        text-align: center;
-       font-size: 20px;
+       font-size: 1rem;
        margin: 20px;
      }
 
      .main-container {
       text-align: center;
-      margin: 20px;
+      margin: 1rem;
       width: 95%;
       /* min-width: 900px;  */
     } 
     .slide-down {
       width:100%;
       overflow:hidden;
-      margin-left: 20px;
+      margin-left: 1rem;
       text-align: center;
     }
     
     .slide-down h2 {
         text-align: center;
-
+        font-size: 1rem;
         color: #212529;
         opacity: 80%;
       animation:2s slide-down 2s forwards;
@@ -517,40 +560,42 @@
     .dark-mode-toggle {
       display: flex;
       align-items: flex-start;
-        margin-left: 20px;
+        margin-left: .5rem;
         background: #7693B6;
         color: steelblue;
         box-shadow: none;
         border: 0px;
       }
       .nav-links {
-      margin-top: 15px;  
+      margin-top: .2rem;  
+      text-decoration: none;
       display: flex;
       align-items:center;
       justify-content:space-evenly;
       }
 
+
       .container .card .contentC p {
         color:#98ABC3;
-        font-size: 8px;
+        font-size: .6rem;
+      }
+      ul {
+        list-style-type: none;
       }
 
      a,
      footer {
        text-align: center;
-       font-size: 15px;
+       font-size: 1rem;
      }
-     h2 {
-      font-size: 17px;
-      width:429px;
-     }
+     
 
      #toggle-btn {
-      padding: 5px 5px;
+      padding: 1rem 1rem;
       /* margin-left: 200px; */
       font-weight: 600;
       box-shadow: none;
-      border: 0px;
+      border: .5rem;
       background: var(--image-text-color);
       color: var(--background-color);
     }
@@ -564,7 +609,7 @@
       margin-bottom: 10px;
      }
      .about-container p {
-       font-size: 15px;
+       font-size: 1rem;
        color: var(--image-text-color);
        margin-top: 40px;
      }
@@ -580,8 +625,8 @@
      }
      .contact-container h1 {
        text-align: center;
-       font-size: 60px;
+       font-size: 1rem;
        margin-bottom: 20px;
      }
     }
-  }
+  
