@@ -23,7 +23,7 @@
 
     p {
       font-family: "Poppins", sans-serif;
-      font-size: 9px;
+      font-size: .6em;
       line-height: 2;
       color: steelblue;
       text-align: center;
@@ -35,7 +35,7 @@
       text-align: center;
       font-family: "Cormorant Garamond", serif;
       font-weight: 200;
-      font-size: 20px;
+      font-size: 1.2em;
     }
     /* .h7 {
       text-align: center;
@@ -60,20 +60,21 @@
     .navigation-container {
       background: var(--image-text-color);
       opacity: 80%;
-      height: 45px; 
+      height: 3em; 
       width: 100vw; 
       display: flex; 
+      justify-content: flex-end;
       /* align-items: center;  */
       margin-bottom: 25px; 
       padding: 5px 15px; 
-      font-size: 17px;
+      font-size: 1em;
       color:#dbdfdf;
       cursor: pointer;
     } 
-    .nav-links .nav-item {
+    /* .nav-item {
       margin-right: 20px;
       justify-content: flex-end;
-    }
+    } */
 
   /* .nav-item {
     display:flex;
@@ -82,16 +83,23 @@
   }   */
    ul {
     display: flex;
-    /* align-items: center; */
-    list-style-type: none;
+    /* align-content: center; */
+   list-style-type: none;
     text-decoration: none;
-    flex-direction: row;
+    flex-direction: row; 
+    /* justify-content: flex-end; */
    }
+   /* .nav-item {
+    display: flex; */
+    /* align-content: center; */
+   /* } */
 
-  .nav-links {
+  /* .nav-links {
     display: flex;
+    flex-direction: row;
     align-items: center;
-  }
+    justify-content: flex-end;
+  } */
 
   /* .nav-item {
     margin-right: 20px;
@@ -100,29 +108,28 @@
   } */
 
 
-  /* .nav-link-active {
-    padding-top: 30px;
-    display: flex;
-    justify-content: flex-end;
+  .nav-link-active {
+    display:flex;
+    /* justify-content: flex-end; */
     margin-right: 10px;
-  } */
+    /* justify-content: right; */
+    /* align-self: center; */
+  }
    
   
-    .nav-btn {
+    /* .dark-mode-toggle {
     display: flex;
-    /* align-content: center; */
-    justify-self: flex-start;  
-    /* margin-right: 600px; */
-  }    
+    align-content: center;
+    justify-self: flex-start;
+  }     */
 
     /* .dark-mode-theme .navigation-container {
       background-color: var(--image-text-color);
     } */
   
-  .nav-brand {
-    display:flex;
-    justify-self: flex-start;
-   
+  .brand {
+    align-content: center;
+    justify-content: space-between;
        }    
 
     /* .nav-links #toggle-btn {
@@ -133,6 +140,9 @@
     }   */
 
     #toggle-btn {
+      /* display:flex;
+      align-self: center;
+      justify-content: flex-start; */
       font-weight: 100;
       margin-left: 5px;
       /* display: flex;
@@ -207,14 +217,14 @@
     padding-top: 30px;
     padding-bottom: 60px;
     color:#212529;
-    font-size: 80px;
+    font-size: 4.2em;
     opacity: 80%;
   }
 
   .main-container h1 {
     color: var(--image-text-color);
     letter-spacing: .05em;
-    font-size: 140px;
+    font-size: 8.2em;
     font-weight: 500;
   }
 
@@ -225,7 +235,7 @@
    }
    .slide-down h2 {
     color:#212529;
-    font-size: 20px;
+    font-size: 1.2em;
     animation:2s slide-down 2s forwards;
     transform:translateY(-100%);
 }
@@ -256,11 +266,11 @@ color: #fff;
     margin: 5px 0;
     text-align: center;
     color: steelblue;
-    font-size: 30px;
+    font-size: 2em;
   }
   footer .source-link {
     color: var(--secondary-text-color);
-    font-size: 10px;
+    font-size: .3em;
   }
   footer .footer-link {
     color: var(--image-text-color);
@@ -280,7 +290,7 @@ color: #fff;
     opacity: 60%;
     padding: 10px 15px;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 1.2em;
   }
   footer .social-links a:hover {
     background: var(--image-text color);
@@ -434,7 +444,7 @@ color: #fff;
   .email-link {
     color: var(--background-color);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1em;
   }
   .email-link:hover {
     color: cadetblue;
@@ -446,7 +456,7 @@ color: #fff;
     text-decoration: none;
     color: var(--image-text-color);
     font-family: "Poppins", sans-serif serif;
-    font-size: 30px;
+    font-size: 1.8em;
     line-height: 30px;
     padding: 45px;
   }
@@ -468,8 +478,8 @@ color: #fff;
     text-decoration: none;
     color: var(--background-color);
     font-family: "Poppins", sans-serif serif;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 1.8em;
+    line-height: 1.8em;
   }
   .dark-mode-theme .contact-container .contact h1 {
     margin-top: 200px;
