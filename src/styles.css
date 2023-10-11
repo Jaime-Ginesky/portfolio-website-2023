@@ -41,16 +41,6 @@
       text-align: center;
       color: var(--image-text-color);
       }  */
-  
-       /* navigation */
-    /* ul {
-      display: flex;
-      flex-direction: row;
-      align-items: center; */
-      /* justify-content: space-evenly; */
-      /* list-style-type: none;
-      text-decoration: none; */
-    /* } */
 
     a {
       text-decoration: none;
@@ -104,7 +94,7 @@
      color:#dbdfdf;
      background: #323358;  
     }
-    
+
     #toggle-btn:hover {
       color:#7693B6;
       /* cursor: pointer; */
@@ -117,14 +107,7 @@
       height: 100vh;
     }
   
-    /* .nav-item {
-      text-decoration: none;
-      padding-bottom: 20px;
-    } */
-
-    /* .nav-links .nav-darkmode-item {
-      font-weight: 100;
-    } */
+ 
   
     /* dark mode */
   
@@ -483,44 +466,7 @@ color: #fff;
       display: flex; 
       justify-content:right; 
        }
-
-    /* .brand {
-      margin-top: .08rem;
-      display:flex;
-      align-content: center; 
-      justify-content: left;
-      font-size: .9rem; 
-    } */
-
-   /* .nav-links .nav-item {
-     margin-bottom: 40px; */ 
-     /* padding: 1rem 1rem; 
-     cursor: pointer;  */
-     /* text-decoration: none;
-   } */
-   
-
-   /* .nav-links {
-     margin-top: .10rem;  
-     text-decoration: none;
-     display: flex;
-     align-items: center;
-     justify-content:space-evenly;
-     }
-
-     .nav-links .nav-links-active {
-      display:flex;
-      align-items: center;
-     } */
-       
-   /* #toggle-btn {
-     /* display: flex;
-     align-items: last baseline; */
-     /* font-size: 1em; */
-     /* font-weight: 100;
-     margin-right: 220px;
-     margin-bottom: 5px;
-   } */ 
+ 
     
     .container {
       font-size: 1rem;
@@ -536,25 +482,30 @@ color: #fff;
     }
   
      .main-container h1 {
-     font-size: 1rem;
+     font-size: 3em;
+     margin: auto;
      display:flex;
+     justify-content: center;
      flex-wrap: nowrap;
-     letter-spacing: 7px;
-     padding-bottom: 20px;
+     /* text-align: center; */
+     letter-spacing: .2em;
+     padding: 0 0 20px;
      color: var(--image-text-color);
      opacity: 1rem;
-     width: 100vw;
+     width: 100%;
     }
-    /* h2 {
+   /* .main-container h2 {
       text-align: center;
       color: #212529;
       opacity: 80%;
+      font-size: .2rem;
     } */
 
-    h3 {
-      font-size: 2rem;
+    .main-container h3 {
+      font-size: 1.7em;
       color: #212529;
       opacity: 80%;
+      text-align: center;
     }
 
      h4,
@@ -582,7 +533,9 @@ color: #fff;
     
     .slide-down h2 {
         text-align: center;
-        font-size: 1rem;
+        width: 100%;
+        font-size: .9em;
+        margin: auto;
         color: #212529;
         opacity: 80%;
       animation:2s slide-down 2s forwards;
