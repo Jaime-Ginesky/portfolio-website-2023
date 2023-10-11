@@ -64,97 +64,47 @@
       width: 100vw; 
       display: flex; 
       justify-content: flex-end;
-      /* align-items: center;  */
       margin-bottom: 25px; 
       padding: 5px 15px; 
       font-size: 1em;
       color:#dbdfdf;
       cursor: pointer;
     } 
-    /* .nav-item {
-      margin-right: 20px;
-      justify-content: flex-end;
-    } */
-
-  /* .nav-item {
-    display:flex;
-    align-items: center;
-    justify-content: flex-end;
-  }   */
+  
    ul {
     display: flex;
-    /* align-content: center; */
    list-style-type: none;
     text-decoration: none;
     flex-direction: row; 
-    /* justify-content: flex-end; */
    }
-   /* .nav-item {
-    display: flex; */
-    /* align-content: center; */
-   /* } */
-
-  /* .nav-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-  } */
-
-  /* .nav-item {
-    margin-right: 20px;
-    display: flex;
-    justify-content: flex-end;
-  } */
-
+   
 
   .nav-link-active {
     display:flex;
-    /* justify-content: flex-end; */
     margin-right: 10px;
-    /* justify-content: right; */
-    /* align-self: center; */
   }
    
-  
-    /* .dark-mode-toggle {
-    display: flex;
-    align-content: center;
-    justify-self: flex-start;
-  }     */
 
     /* .dark-mode-theme .navigation-container {
       background-color: var(--image-text-color);
     } */
-  
-  .brand {
-    align-content: center;
-    justify-content: space-between;
-       }    
-
-    /* .nav-links #toggle-btn {
-      display: flex;
-      flex-direction: row;
-      justify-self: flex-start;
-      align-self: flex-start;
-    }   */
-
+  .brand-btn {
+    display: flex;
+    align-content: flex-start;
+    margin-right: auto;
+  }
+ 
     #toggle-btn {
-      /* display:flex;
-      align-self: center;
-      justify-content: flex-start; */
-      font-weight: 100;
-      margin-left: 5px;
-      /* display: flex;
-      flex-direction: row;
-      align-self: flex-start; */
-      /* justify-content: flex-start;
-      align-items: center; */
-      box-shadow: none; 
-      border: 0px; 
-      color:#dbdfdf;
-      background: #323358;  
+     display:flex;
+     align-self:auto; 
+     margin-left: 1em;
+     font-weight: 100;
+     box-shadow: none; 
+     border: 0px; 
+     color:#dbdfdf;
+     background: #323358;  
     }
+    
     #toggle-btn:hover {
       color:#7693B6;
       /* cursor: pointer; */
