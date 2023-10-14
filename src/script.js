@@ -88,3 +88,10 @@ toggleBtn.addEventListener("click", (e) => {
   );
   document.getElementById('dictionary-card').appendChild(dictionaryCard);
 
+  const ecommCard = createCard(
+    'E-Commerce',
+    'Functional e-commerce website with signup/log-in page for customer purchasing accounts. Built with React.',
+    'https://nositeyet.netlify.app/'
+  ); 
+  document.getElementById('e-comm-card').appendChild(ecommCard);
+
