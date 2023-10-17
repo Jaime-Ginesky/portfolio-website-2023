@@ -36,8 +36,8 @@
     h6 {
       color: var(--image-text-color);
       text-align: center;
-      font-family: "Cormorant Garamond", serif;
-      font-weight: 400;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 100;
       font-size: 1.2em;
     
     }
@@ -491,9 +491,9 @@ color: #fff;
     text-decoration: none;
     color: var(--image-text-color);
     background: rgb(233, 237, 240);
-    padding: 20px;
-    height: 40px;
-    width: 40px;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     font-weight:light;
     text-transform: uppercase;
