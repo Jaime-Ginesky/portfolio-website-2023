@@ -228,14 +228,20 @@ color: #fff;
     color: azure;
     text-decoration: none;
     margin: 0 20px;
-    background: var(--secondary-text-color);
+    background: var(--image-text-color);
     opacity: 60%;
     padding: 10px 15px;
     border-radius: 50%;
-    font-size: 1.2em;
+    font-size: .6em;
   }
   .social-links a:hover {
     background: var(--image-text color);
+  }
+
+  .dark-mode-theme .social-links a:hover {
+    background-color: var(--background-color);
+    opacity:80%;
+    box-shadow: 0 5px 15px var(--background-color);
   }
   footer p {
     font-size: 1.3em;
@@ -339,6 +345,7 @@ color: #fff;
   /* descriptive text and link after slide over */
   .container .card .contentC p {
     color:#98ABC3;
+    font-size: .6em;
   }
  
   /* project title card */
@@ -411,7 +418,7 @@ color: #fff;
     margin: 3em;
     max-width: 800px;
     padding-left: 4em;
-  } */
+  } 
   
   .button-link {
     display: flex;
@@ -495,18 +502,15 @@ color: #fff;
     align-items: center;
   }
   .button:hover .glow-button:hover {
-    color: var(--image-text-color);
+    color: var(--background-color);
   }
   
   .glow-button:hover {
-    color: var(--image-text-color);
-    box-shadow: 0 5px 15px rgba(52, 176, 230, 0.4);
+    background-color: var(--background-color);
+    opacity:90%;
+    box-shadow: 0 5px 15px var(--background-color);
   }
   
-  .dark-mode-theme .glow-button:hover {
-   color: var(--image-text-color-color);
-   box-shadow: 0 5px 15px;
-  }
 
 
   
