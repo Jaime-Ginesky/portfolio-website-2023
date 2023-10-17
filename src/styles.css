@@ -455,6 +455,9 @@ color: #fff;
     }
 
 
+  .dark-mode-theme .container .card .contentC p {
+    font-size: .6em;;
+  }
 
   .dark-mode-theme .contact-container .contact a {
     text-decoration: none;
