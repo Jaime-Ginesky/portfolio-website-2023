@@ -324,17 +324,18 @@ color: #fff;
     width: 100%;
     height: 100%;
     transform: scaleX(0);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.7s ease-in-out;
     transform-origin: left;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
   }
   
  /* hidden description and link text on hover */
   .container .card:hover .contentC::before {
     transform: scale(1);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.7s ease-in-out;
     transform-origin: left;
-    background-color: rgb(58, 55, 64);
+    /* background-color: rgb(58, 55, 64); */
+    background-image:radial-gradient(rgb(58, 55, 64), #393442, azure);
   }
     /* project title name */
   .container .card .contentC {
@@ -361,7 +362,7 @@ color: #fff;
   /* project title card on hover */
   .container .card:hover .contentC .content {
     transform: translateX(0px);
-    transition-delay: 0.5s;
+    transition-delay: 0.7s;
   }
   
   /* about page css */
@@ -491,8 +492,8 @@ color: #fff;
     color: var(--image-text-color);
     background: rgb(233, 237, 240);
     padding: 20px;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     font-weight:light;
     text-transform: uppercase;
@@ -502,13 +503,13 @@ color: #fff;
     align-items: center;
   }
   .button:hover .glow-button:hover {
-    color: var(--background-color);
+    color: azure;
   }
   
   .glow-button:hover {
-    background-color: var(--background-color);
+    background-color: azure;
     opacity:90%;
-    box-shadow: 0 5px 15px var(--background-color);
+    box-shadow: 0 5px 15px azure;
   }
   
 
