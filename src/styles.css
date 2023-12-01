@@ -82,7 +82,6 @@
       ul li{
         list-style:none;
         margin:0 40px;
-        text-align: center;
         transition:0.5s;
       }
       
@@ -475,12 +474,12 @@ color: #fff;
     margin-top: 90px;
     color: var(--secondary-text-color);
   } */
-  .intro-container {
+  .intro-container text {
 
     color: var(--image-text-color);
-    margin: 3em;
-    max-width: 800px;
-    padding-left: 4em;
+    margin: 4em;
+    width: 30vw;
+    padding-left: 5em;
   } 
   
   .button-link {
@@ -726,7 +725,7 @@ color: #fff;
 
      
 
-     
+/*      
      .about-container {
        text-align: center;
      }
@@ -742,7 +741,7 @@ color: #fff;
      .about-container .about-portrait {
        margin-top: 0;
        padding: 0px;
-     }
+     } */
      .button-link {
        box-sizing: content-box;
        text-align: center;
