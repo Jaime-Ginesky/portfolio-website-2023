@@ -477,9 +477,9 @@ color: #fff;
   .intro-container text {
 
     color: var(--image-text-color);
-    margin: 4em;
-    width: 30vw;
-    padding-left: 5em;
+    margin: 2em;
+    width: 20vw;
+    padding: 5em;
   } 
   
   .button-link {
