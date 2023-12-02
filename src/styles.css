@@ -330,7 +330,7 @@ color: #fff;
     height: 180px;
     margin: 20px; 
     overflow: hidden;
-    box-shadow: 7px 5px 5px #535b63;
+    box-shadow: 5px 3px 4px #535b63;
     /* border-radius: 300px; */
   }
   /* background and content  */
@@ -353,6 +353,7 @@ color: #fff;
     height: 100%;
     object-fit: cover;
     background-image: radial-gradient(azure, #c0c0c0);
+    border-color: #212529;
     opacity: 90%;
     display: flex;
     /* justify-content: center; */
@@ -397,7 +398,7 @@ color: #fff;
     transition: transform 0.7s ease-in-out;
     transform-origin: left;
     /* background-color: rgb(58, 55, 64); */
-    background-image:radial-gradient(rgb(58, 55, 64), #c0c0c0, azure);
+    background-color:rgb(58, 55, 64);
   }
     /* project title name */
   .container .card .contentC {
