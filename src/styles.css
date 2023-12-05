@@ -331,7 +331,8 @@ color: #fff;
     margin: 20px; 
     overflow: hidden;
     box-shadow: 5px 3px 4px #535b63;
-    /* border-radius: 300px; */
+    border-radius: 30px;
+    border-color: #766989;
   }
   /* background and content  */
   .container .card .imgC,
@@ -352,7 +353,7 @@ color: #fff;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-image: radial-gradient(azure, #c0c0c0);
+    background-image: radial-gradient(azure, #766989);
     border-color: #212529;
     opacity: 90%;
     display: flex;
@@ -398,7 +399,7 @@ color: #fff;
     transition: transform 0.7s ease-in-out;
     transform-origin: left;
     /* background-color: rgb(58, 55, 64); */
-    background-color:rgb(58, 55, 64);
+    background-color:rgb(237, 235, 241);
   }
     /* project title name */
   .container .card .contentC {
