@@ -313,6 +313,7 @@ color: #fff;
   }
 
 
+
   /* projects container spheres */
   .container {
     position: relative;
@@ -477,6 +478,10 @@ color: #fff;
     margin-top: 90px;
     color: var(--secondary-text-color);
   } */
+
+  .container {
+    border: #766989;
+  }
   .intro-container text {
 
     color: var(--image-text-color);
