@@ -327,12 +327,11 @@ color: #fff;
   /* individual cards */
   .container .card {
     position: relative;
-    width: 250px;
-    height: 180px;
-    margin: 20px; 
+    width: 280px;
+    height: 300px;
+    margin-top: 40px; 
     overflow: hidden;
-    box-shadow: 5px 3px 4px #535b63;
-    border-radius: 30px;
+    box-shadow: 2px 3px 2px #535b63;
     border-color: #766989;
   }
   /* background and content  */
@@ -354,9 +353,8 @@ color: #fff;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-image: radial-gradient(azure, #766989);
     border-color: #212529;
-    opacity: 90%;
+    opacity: 100%;
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -401,15 +399,19 @@ color: #fff;
     transform-origin: left;
     /* background-color: rgb(58, 55, 64); */
     background-color:rgb(237, 235, 241);
+    opacity: 50%;
   }
     /* project title name */
   .container .card .contentC {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../src/media/dictionary_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   /* descriptive text and link after slide over */
-  .container .card .contentC p {
+  .container .card .imgC p {
     color:#98ABC3;
     font-size: .6em;
   }
@@ -429,59 +431,7 @@ color: #fff;
     transform: translateX(0px);
     transition-delay: 0.7s;
   }
-  
-  /* about page css */
 
-  /* .about-main-container {
-    font-family: "Poppins", sans-serif;
-    width: 100vw;
-    text-align: center;
-    opacity: 80%;
-    margin-top: 9em;
-  }
-
-  .about-main-container h1 {
-    color: var(--image-text-color);
-    letter-spacing: .05em;
-    font-size: 8em;
-    font-weight: 500;
-  }
-
-   .slide-down {
-    overflow: hidden;
-    padding-bottom: 2em;
-
-   }
-   .slide-down h2 {
-    color:#212529;
-    font-size: 1.2em;
-    animation:2s slide-down 2s forwards;
-    transform:translateY(-100%);
-}
-@keyframes slide-down {
- to {
-   transform:translateX(0%);
- }
-} 
-
-
-  .about-portrait {
-    border: 3px solid #323358;
-    border-radius: 100px;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 150px;
-    opacity: 58%;
-  }
-  
-  /* .main-container h3 {
-    margin-top: 90px;
-    color: var(--secondary-text-color);
-  } */
-
-  .container {
-    border: #766989;
-  }
   .intro-container text {
 
     color: var(--image-text-color);
