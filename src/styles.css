@@ -108,7 +108,7 @@
         opacity:1;
         filter:blur(0);
         text-decoration:none;
-        color:#c9c0bb;
+        color:var(--image-text-color);
       }
 
     a {
@@ -118,7 +118,7 @@
    
 
     .navigation-container {
-      background: var(--image-text-color);
+      background: #c0c0c0;
       opacity: 80%;
       height: 3em; 
       width: 100vw; 
