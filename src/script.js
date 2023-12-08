@@ -8,13 +8,13 @@ const enableDarkMode = () => {
     theme.classList.add("dark-mode-theme");
     toggleBtn.classList.remove("dark-mode-toggle");
     localStorage.setItem("dark-mode", "enabled");
-    toggleBtn.innerHTML = `Light`;
+    toggleBtn.innerHTML = `LIGHT THEME`;
 }
 const disableDarkMode = () => {
     theme.classList.remove("dark-mode-theme");
     toggleBtn.classList.add("dark-mode-toggle");
     localStorage.setItem("dark-mode", "disabled");
-    toggleBtn.innerHTML = `Dark`;
+    toggleBtn.innerHTML = `DARK THEME`;
 }
 
 if (darkMode === "enabled") {
