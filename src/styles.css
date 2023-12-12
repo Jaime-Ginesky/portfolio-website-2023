@@ -272,19 +272,19 @@ color: #fff;
 
     /* all footer css  */
   footer {
-    margin: 5em;
+    /* margin: 5em; */
     text-align: center;
     color: steelblue;
     font-size: 2em;
     background-color: #212529;
-    background-size:auto;
+    padding: 4em;
   }
   .source-link {
     color: var(--secondary-text-color);
     font-size: .3em;
   }
   .footer-link {
-    color: var(--image-text-color);
+    color: azure;
     text-decoration: none;
   }
   .footer-link:hover {
