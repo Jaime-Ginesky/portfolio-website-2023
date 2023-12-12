@@ -21,7 +21,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: var(--background-color);
+    background:rgb(254, 254, 254);
   }
 
     p {
@@ -229,10 +229,11 @@
 
   .main-container h1,
   .container h1 {
-    color: var(--image-text-color);
+    color:#212529;
     letter-spacing: .05em;
-    font-size: 8.2em;
+    font-size: 9em;
     font-weight: 500;
+    font-family: 'Abril Fatface';
   }
 
 
