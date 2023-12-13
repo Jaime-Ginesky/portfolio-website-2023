@@ -135,23 +135,6 @@
       position: relative;
     } 
   
-   /* ul {
-    display: flex;
-   list-style-type: none;
-    text-decoration: none;
-    flex-direction: row; 
-   } */
-   
-
-  /* .nav-link-active {
-    display:flex;
-    margin-right: 2em;
-  } */
-   
-
-    /* .dark-mode-theme .navigation-container {
-      background-color: var(--image-text-color);
-    } */
  
  
      button {
@@ -164,6 +147,10 @@
      color:#dbdfdf;
      background: #c0c0c0;  
     } 
+
+    .dark-mode-theme button {
+      background: #161615;
+    }
 
     /* #toggle-btn:hover {
       color:#7693B6; */
@@ -208,7 +195,9 @@
     .dark-mode-theme a:hover {
       color:#defa0a;
     }
-  
+  .dark-mode-theme .navigation-container {
+    background:#161615;
+  }
   .card-text {
     font-size: .8rem;
   }
