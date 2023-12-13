@@ -209,7 +209,9 @@
       color:#defa0a;
     }
   
-  
+  .card-text {
+    font-size: .8rem;
+  }
   /* main container and slide down */
   .main-container {
     /* font-family: "Poppins", sans-serif; */
