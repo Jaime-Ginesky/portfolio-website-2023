@@ -59,7 +59,8 @@ toggleBtn.addEventListener("click", (e) => {
     contentElement.appendChild(descriptionElement);
     contentElement.appendChild(linkElement);
 
-    
+    titleElement.appendChild(descriptionElement);
+    titleElement.appendChild(linkElement);
     card.appendChild(titleElement);
     card.appendChild(contentElement);
 
