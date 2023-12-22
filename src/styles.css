@@ -297,19 +297,24 @@ color: #fff;
     font-size: .5em;
   }
 
-  /* .skill-list li {
-    font-size: .7em;
-    display: ;
 
+   .skill-list {
+    display: flex;
+    justify-content: center;
+    font-size: .6em;
+    line-height: 2rem;
+    margin-top: 5em;
+  } 
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
   }
-
-  .skill-list-two li {
-    font-size: .7em;
-    display:block;
-  } */
-
-  .list-group {
-    display: block;
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    width: 500px;
   }
 
   .contact-container footer .button-link  {
