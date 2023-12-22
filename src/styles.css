@@ -167,6 +167,10 @@
       color:#8a9999;
     }
 
+    .card-title {
+      margin: 1em 0 0 1em;
+    }
+
     /* #toggle-btn:hover {
       color:#7693B6; */
       /* cursor: pointer; */
