@@ -297,6 +297,21 @@ color: #fff;
     font-size: .5em;
   }
 
+  /* .skill-list li {
+    font-size: .7em;
+    display: ;
+
+  }
+
+  .skill-list-two li {
+    font-size: .7em;
+    display:block;
+  } */
+
+  .list-group {
+    display: block;
+  }
+
   .contact-container footer .button-link  {
     margin-top: 15rem;
   }
