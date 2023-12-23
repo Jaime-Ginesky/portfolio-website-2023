@@ -186,7 +186,10 @@
   
    .container-about {
     display:flex;
-    align-items: stretch;
+    justify-content: center;
+    align-items:stretch;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
    }
   
     /* dark mode */
