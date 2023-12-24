@@ -34,7 +34,7 @@ toggleBtn.addEventListener("click", (e) => {
   // Function to create a card for project menu
   function createCard(title, description, link) {
     const card = document.createElement('article');
-    card.classList.add('container','imgCard','contentC', 'content', 'card:hover','dark-mode-theme');
+    card.classList.add('container','dark-mode-theme','content');
     // Add your desired card class here
     
     const contentElement = document.createElement('content');
@@ -47,7 +47,7 @@ toggleBtn.addEventListener("click", (e) => {
     
     const descriptionElement = document.createElement('p');
     descriptionElement.textContent = description;
-    descriptionElement.classList.add('p')
+    descriptionElement.classList.add('p', 'content','contentC::before', 'card:hover');
     // descriptionElement.classList.add('imgCard','content','contentC');
 
     const linkElement = document.createElement('a');
@@ -57,10 +57,10 @@ toggleBtn.addEventListener("click", (e) => {
     linkElement.textContent = 'GO';
 
     contentElement.appendChild(descriptionElement);
-    contentElement.appendChild(linkElement);
+    descriptionElement.appendChild(linkElement);
 
-    titleElement.appendChild(descriptionElement);
-    titleElement.appendChild(linkElement);
+    titleElement.appendChild(contentElement);
+    // titleElement.appendChild(linkElement);
     card.appendChild(titleElement);
     card.appendChild(contentElement);
 
@@ -75,12 +75,12 @@ toggleBtn.addEventListener("click", (e) => {
   );
   document.getElementById('weather-card').appendChild(weatherCard);
 
-  const robofriendsCard = createCard(
-    'RoboFriends',
-    'For each name entered into search, a new RoboFriend avatar is created and attached to that person. Built with React.',
-    'https://upbeat-bohr-d8d654.netlify.app/'
-  );
-  document.getElementById('robofriends-card').appendChild(robofriendsCard);
+  // const robofriendsCard = createCard(
+  //   'RoboFriends',
+  //   'For each name entered into search, a new RoboFriend avatar is created and attached to that person. Built with React.',
+  //   'https://upbeat-bohr-d8d654.netlify.app/'
+  // );
+  // document.getElementById('robofriends-card').appendChild(robofriendsCard);
 
   const dictionaryCard = createCard(
     'Dictionary App',
