@@ -481,6 +481,7 @@ color: #fff;
   }
 }
 
+/* portfolio slider */
 .card {
   overflow: hidden;
   position: relative;
@@ -530,8 +531,7 @@ color: #fff;
     transition: all 0.275s ease-in-out, visibility 0s 0.275s;
 
     h2 {
-      color: map-get( #ffffff,
-      #f5811e, white);
+      color:#080808;
       font-weight: bolder;
       font-size: 28px;
       margin: 0 0 15px;
@@ -542,13 +542,12 @@ color: #fff;
       margin-bottom: 15px;
       width: 30px;
       height: 5px;
-      background-color: map-get(#ffffff,
-     #f5811e, orange);
+      /* background-color: map-get(#ffffff,
+     #f5811e, orange); */
     }
 
     p {
-      color: map-get(  #ffffff,
-       #f5811e, white);
+      color:#dbdfdf;
       margin: 0;
     }
   }
