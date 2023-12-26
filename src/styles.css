@@ -403,7 +403,7 @@ color: #fff;
     left: 0;
     width: 100%;
     height: 100%;
-    margin: 0;
+    /* margin: 0; */
   }
   
    /* background on card */
@@ -418,29 +418,15 @@ color: #fff;
     background:#c9f43f;
     border-color: #f0f2f5;
     opacity: 100%;
-    display: block;
+    /* display: block;
     text-align: center;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     font-size: 1.3em;
     text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  /* dark mode background on card */
-  /* .dark-mode-theme .container .card .imgC {
-     background-image: radial-gradient(azure, var(--image-text-color));
+    letter-spacing: 1px;   */
   }
 
-  .dark-mode-theme .container .card {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    margin: 20px; 
-    overflow: hidden;
-    border-radius: 300px;
-    border:none;
-  } */
   
   /* hidden desciption and link text before hover */
   .container .card .contentC::before {
@@ -457,7 +443,7 @@ color: #fff;
   }
   
  /* hidden description and link text on hover */
-  .container .card:hover .contentC::before  {
+  .container .card:hover .imgC::before  {
     transform: scale(1);
     transition: transform 0.8s ease-in-out;
     transform-origin: left;
@@ -490,22 +476,27 @@ color: #fff;
   } */
  
   /* project title card */
-  .container .card  .content p {
+  .container .card  .contentC p {
     position: relative;
-    padding: 30px;
+    padding: 60px;
     z-index: 1;
     transition: 0.7s;
     transform: translateX(-300px);
     transition-delay: 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .3em;
     /* overflow: hidden; */
   }
   /* project title card on hover */
   .container .card:hover p {
     transform: translateX(0px);
     transition-delay: 0.5s;
-    display: inline-block;
+   
+    /* display: block;
     text-align: center;
-    font-size: .4em;
+    font-size: .4em; */
   }
 
   .intro-container text {
