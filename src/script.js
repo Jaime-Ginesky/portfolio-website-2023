@@ -47,7 +47,7 @@ toggleBtn.addEventListener("click", (e) => {
     
     const descriptionElement = document.createElement('p');
     descriptionElement.textContent = description;
-    descriptionElement.classList.add('p','contentC::before', 'card:hover');
+    descriptionElement.classList.add('p');
     // descriptionElement.classList.add('imgCard','content','contentC');
 
     const linkElement = document.createElement('a');
@@ -96,3 +96,11 @@ toggleBtn.addEventListener("click", (e) => {
   ); 
   document.getElementById('e-comm-card').appendChild(ecommCard);
 
+
+   // Lightbox
+ lightbox.option({
+  resizeDuration: 300,
+  wrapAround: true,
+  disableScrolling: true,
+  albumLabel: "%1 / %2",
+});
