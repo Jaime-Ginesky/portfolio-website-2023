@@ -448,7 +448,7 @@ color: #fff;
     box-shadow: 0 5px 15px azure;
   }
   
-
+  /* portfolio slider  */
 
 .portfolio-wrapper {
   margin-top: 5px;
@@ -468,11 +468,11 @@ color: #fff;
       transform: translateX(100%);
     }
 
-    & .card:hover ~ .card .slide {
+    & .card-projects:hover ~ .card-projects .slide {
       transform: translateX(-100%);
     }
 
-    .card:hover .slide {
+    .card-projects:hover .slide {
       transform: none;
       visibility: visible;
       transition-delay: 0s;
@@ -481,8 +481,7 @@ color: #fff;
   }
 }
 
-/* portfolio slider */
-.card {
+.card-projects {
   overflow: hidden;
   position: relative;
   flex: 1 1 auto;

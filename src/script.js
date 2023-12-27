@@ -98,9 +98,9 @@ toggleBtn.addEventListener("click", (e) => {
 
 
    // Lightbox
- lightbox.option({
-  resizeDuration: 300,
-  wrapAround: true,
-  disableScrolling: true,
-  albumLabel: "%1 / %2",
-});
+//  lightbox.option({
+//   resizeDuration: 300,
+//   wrapAround: true,
+//   disableScrolling: true,
+//   albumLabel: "%1 / %2",
+// });
