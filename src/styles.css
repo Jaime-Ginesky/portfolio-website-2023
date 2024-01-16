@@ -142,12 +142,6 @@
       text-align: center;
     }
 
-    /* #toggle-btn:hover {
-      color:#7693B6; */
-      /* cursor: pointer; */
-      /* opacity: 1rem; */
-      /* color: steelblue; */
-    /* } */ 
    
     #theme {
       width: 100vw;
@@ -161,26 +155,6 @@
     flex-wrap: wrap;
     /* flex-grow: 1; */
    }
-  
-    /* dark mode */
-  
-    /* button {
-      padding-top: 20px;
-      /* margin-left: 200px; */
-      /* border: 0px; */
-      /* font-weight: 200;
-    }
-    
-    .dark-mode-theme a {
-      color: var(--background-color);
-    }
-    a:hover {
-      text-decoration: none;
-      color:#7693B6;
-    }
-    /* .dark-mode-theme a:hover {
-      color: var(--secondary-text-color);
-    }  */
 
 
     /* background/text in dark mode */
@@ -290,17 +264,6 @@ color: #fff;
   .dark-mode-theme .skill-list {
     color:#8a9999;
   }
-  /* .row {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-  }
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    width: 45rem;
-  } */
 
   .contact-container footer .button-link  {
     margin-top: 15rem;
@@ -316,22 +279,7 @@ color: #fff;
   .footer-link:hover {
     color: #defa0a;
   }
-  /* .social-container {
-    margin-top: 19px;
-  }
-  .social-links a {
-    color: azure;
-    text-decoration: none;
-    margin: 0 20px;
-    background: var(--image-text-color);
-    opacity: 60%;
-    padding: 10px 15px;
-    border-radius: 50%;
-    font-size: .6em;
-  }
-  .social-links a:hover {
-    background: var(--image-text color);
-  } */
+
 
   .dark-mode-theme .social-links a:hover {
     background-color: var(--background-color);
@@ -342,9 +290,6 @@ color: #fff;
     font-size: 1.3em;
     color: var(--background-color);
   }
-  /* .dark-mode-theme .footer-link {
-    color: var(--background-color);
-  } */
 
 
   .intro-container text {
@@ -400,10 +345,6 @@ color: #fff;
     font-family: 'Abril Fatface';
     }
 
-
-  /* .dark-mode-theme .container .card .contentC p {
-    font-size: .6em;;
-  } */
 
   .dark-mode-theme .contact-container .contact a {
     text-decoration: none;
@@ -461,7 +402,7 @@ color: #fff;
 
   &:hover {
     & ~ .line .slide {
-      transform: translateY(-100%);
+      transform: translateY(0);
     }
 
     .slide {
@@ -488,7 +429,7 @@ color: #fff;
   max-width: 380px;
   height: 260px;
   margin: 20px;
-  
+  margin-top: 100px;
 
   .photo-container {
     position: absolute;
@@ -526,8 +467,8 @@ color: #fff;
     background: rgba(0, 0, 0, 0.5);
     padding: 15px;
     will-change: transform;
-    transform: translateY(100%);
-    transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+    transform: translateY(0);
+    transition: all 0.275s ease-in-out, visibility 0s 0.175s;
 
     h2 {
       color:#dbdfdf;
@@ -547,7 +488,7 @@ color: #fff;
     }
 
     p {
-      color:#dbdfdf;
+      color:azure;
       margin: 0;
     }
   }
