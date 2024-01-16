@@ -1,6 +1,11 @@
 const toggleBtn = document.getElementById("toggle-btn");
 const theme = document.getElementById("theme");
 let darkMode = localStorage.getItem("dark-mode");
+window.onload = () => {
+  setTimeout(function() {
+    document.getElementsByTagName("body");
+  }, 200);
+}
 
 
 // Function to create Dark/Light Mode button
