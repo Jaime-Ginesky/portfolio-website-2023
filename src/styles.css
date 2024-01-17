@@ -25,8 +25,9 @@
     align-items: center;
     width: 100vw;
     max-width: 100%;
-    height: auto;
+    height: 100%; 
     background:rgb(254, 254, 254);
+    margin: 0 auto;
   }
 
     p {
@@ -203,17 +204,7 @@
     font-weight: 500;
     font-family: 'Abril Fatface';
   }
-
-  /* .projects-container h1,
-  .container h1 {
-    margin-top: .5em;
-    color:#212529;
-    letter-spacing: .05em;
-    font-size: 9em;
-    font-weight: 500;
-    font-family: 'Abril Fatface';
-  }
- */
+ 
 
    .slide-down {
     overflow: hidden;
@@ -281,13 +272,20 @@ color: #fff;
     padding: 7em;
   }
 
+  .projects-container {
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+  }
+
 
    .skill-list  {
     display: block;
     text-align: center;
     font-size: .8em;
-    margin-top: 3em;
+    margin-top: 1em;
   } 
+
   .dark-mode-theme .skill-list {
     color:#8a9999;
   }
@@ -516,6 +514,13 @@ color: #fff;
 }
 
 @media screen and (max-width: 1200px) {
+  
+  ul li a,
+  ul li button {
+    font-size: .6em;
+    padding-top: .5em;
+  }
+
   .main-container h1 {
     font-size: 4.7em;
     display: flex;
@@ -527,6 +532,14 @@ color: #fff;
     margin-bottom: .6em;
   }
 
+  .skill-list h2 {
+    margin-bottom: .3em;
+  }
+
+  .skill-list {
+    margin-bottom: .2em;
+  }
+
   .card-projects {
     /* display: flex;
     flex-wrap: wrap; */
@@ -534,32 +547,38 @@ color: #fff;
     max-width: 14em;
     margin-bottom: 4em;
   }
-
-  .projects-footer {
-    margin-top: 4em;
-    padding: 9em;
-  }
-
-  .card-text {
-    font-size: .7em;
-  } 
-
 }
 
  @media screen and (max-width: 600px) {
 
 
   ul li {
-    padding: 1em 2em;
-    transition:0.5s;
+    padding: .6em 2em;
+    display: flex;
+    flex-wrap: nowrap;
+    /* transition:0.5s; */
   }
 
   ul li button,
   ul li a {
-    font-size: 8px;
-    padding: 1px;
+    font-size: .4em;
   }
 
+  .main-container h3 {
+    font-size: .9em;
+  }
+
+  .main-container h1 {
+    font-size: 2em;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .main-container h2 {
+    font-size: 1em;
+  }
+
+/* 
   .line {
     display: flex;
     justify-content: right;
@@ -569,17 +588,18 @@ color: #fff;
     height: 100px;
     max-width: 150px;
     margin-bottom: 1px;
-  }
+  } */
 
-  img {
-    width: 5em;
+  /* img {
+    width: 7em;
     height: auto;
-  }
+    margin-left: 1em;
+  } */
 
   .navigation-container {
-    margin-bottom: 10px;
+    padding: .6em;
   }
-
+/* 
   .main-container h1 {
     margin-top: 1px;
     font-size: 1em;
@@ -604,7 +624,7 @@ color: #fff;
 
   footer {
     padding: .3em;
-  }
+  } */
 }
 
  
