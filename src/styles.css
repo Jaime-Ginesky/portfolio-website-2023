@@ -35,7 +35,7 @@
       line-height: 2;
       color: var(--image-text-color);
       text-align: center;
-      border-radius: 4px;
+      /* border-radius: 4px; */
     }
     
     h6 {
@@ -51,13 +51,13 @@
      }
 
 
-      ul{
+     ul {
         margin:0;
         padding:0;
         display: flex;
       }
       
-      ul li{
+      ul li {
         list-style:none;
         padding: 0 3em;
         transition:0.5s;
@@ -68,14 +68,13 @@
         display: block;
         position:relative;
         text-decoration:none;
-        padding:5px;
-        font-size:14px;
+        padding:.4em;
+        font-size: .9em;
         font-family: sans-serif;
         color:#fff;
         text-transform:uppercase;
         transition:0.5s;
-
-      }
+     }
       
       ul:hover li a,
       ul:hover li button {
@@ -100,14 +99,14 @@
    
 
     .navigation-container {
+      display: flex; 
+      justify-content:center;
+      margin-bottom: 2em; 
+      padding: .6em 4em; 
       background: #080808;
       opacity: 90%;
       height: 3em; 
       width: 100vw; 
-      display: flex; 
-      justify-content:center;
-      margin-bottom: 2em; 
-      padding: 5px 15px; 
       font-size: 1em;
       color:#dbdfdf;
       cursor: pointer;
@@ -122,7 +121,7 @@
      margin-left: 1em;
      font-weight: 100;
      box-shadow: none; 
-     border: 0px; 
+     border: .1em; 
      color:#dbdfdf;
      background: #080808;  
     } 
@@ -163,20 +162,13 @@
    }
 
    img {
-    margin: 3px;
-    /* width: 21vw;
-    height: auto; */
+    margin: .5em;
    }
-
-   /* .card-text {
-    font-size: 3em;
-   } */
 
 
     /* background/text in dark mode */
     .dark-mode-theme {
       background: #212529;
-/* color: var(--background-color); */
 }
     .dark-mode-theme a:hover {
       color:#defa0a;
@@ -190,15 +182,14 @@
   }
   /* main container and slide down */
   .main-container {
-    /* font-family: "Poppins", sans-serif; */
     width: 100vw;
     text-align: center;
     opacity: 80%;
   }
 
   .main-container h3 {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: .6em;
+    padding-bottom: .6em;
     color:#212529;
     font-size: 4.2em;
     opacity: 80%;
@@ -213,6 +204,16 @@
     font-family: 'Abril Fatface';
   }
 
+  /* .projects-container h1,
+  .container h1 {
+    margin-top: .5em;
+    color:#212529;
+    letter-spacing: .05em;
+    font-size: 9em;
+    font-weight: 500;
+    font-family: 'Abril Fatface';
+  }
+ */
 
    .slide-down {
     overflow: hidden;
@@ -239,7 +240,7 @@
 }
 
 .dark-mode-theme .main-container h3{ 
-    padding: 60px;
+    padding: .8em;
     color: #fff;
 }
 
@@ -272,6 +273,12 @@ color: #fff;
 
   .projects-footer .source-link {
     font-size: .5em;
+    /* padding: 6em; */
+  }
+
+  .dark-mode-theme .projects-footer {
+    background:#0e0f02;
+    padding: 7em;
   }
 
 
@@ -279,7 +286,6 @@ color: #fff;
     display: block;
     text-align: center;
     font-size: .8em;
-    /* line-height: 1.4rem; */
     margin-top: 3em;
   } 
   .dark-mode-theme .skill-list {
@@ -345,20 +351,18 @@ color: #fff;
 
   /* contact page css */
   .contact-container .contact a {
-    margin-top: 5rem;
+    display: inline-block;
+    padding: 1.5em;
     text-decoration: none;
     color:#3d4145;
-    /* font-family: "Poppins", sans-serif serif; */
-    font-size: 5em; 
-    /* line-height: 30px; */
-    padding: 45px;
+    font-size: 3em; 
   }
   
   .contact-container .contact a:hover {
     color:#defa0a;
   }
   .contact-container .main-container h1 {
-    margin-top: 10rem;
+    margin-top: 8rem;
     color:#212529;
     letter-spacing: .05em;
     font-size: 9em;
@@ -368,18 +372,14 @@ color: #fff;
 
 
   .dark-mode-theme .contact-container .contact a {
-    text-decoration: none;
     color:#dbdfdf;
-    font-size: 5em;
   }
   .dark-mode-theme .contact-container .main-container h1 {
-    margin-top: 200px;
-    font-weight: 100;
-    font-family: "Abril Fatface";
-    padding-bottom: 60px;
+    padding-bottom: .5em;
     color:#defa0a;
     }
-    .dark-mode-theme .contact-container .contact a:hover {
+
+  .dark-mode-theme .contact-container .contact a:hover {
       color:#defa0a;
     }
 
@@ -389,9 +389,9 @@ color: #fff;
     text-decoration: none;
     color:#161615;
     background: rgb(233, 237, 240);
-    padding: 15px;
-    height: 40px;
-    width: 40px;
+    padding: 1.4em;
+    height: 1.3em;
+    width: 1.3em;
     border-radius: 50%;
     font-weight:light;
     text-transform: uppercase;
@@ -399,7 +399,7 @@ color: #fff;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 1em;
   }
  
   
@@ -413,7 +413,7 @@ color: #fff;
   /* portfolio slider  */
 
 .portfolio-wrapper {
-  margin-top: 5px;
+  margin-top: .2em;
 }
 
 .line {
@@ -447,10 +447,10 @@ color: #fff;
   overflow: hidden;
   position: relative;
   flex: 1 1 auto;
-  max-width: 380px;
-  height: 260px;
-  margin: 20px;
-  margin-top: 100px;
+  max-width: 30em;
+  height: 17em;
+  margin: 1.4em;
+  margin-top: 5em;
 
   .photo-container {
     position: absolute;
@@ -486,7 +486,7 @@ color: #fff;
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
-    padding: 15px;
+    padding: 1em;
     will-change: transform;
     transform: translateY(0);
     transition: all 0.275s ease-in-out, visibility 0s 0.175s;
@@ -495,19 +495,20 @@ color: #fff;
       color:#ebf7ea;
       text-decoration: none;
       font-weight: bolder;
-      letter-spacing: 4px;
-      font-size: 28px;
-      margin: 0 0 15px;
+      letter-spacing: .2em;
+      font-size: 1.4em;
+      margin: 0 0 1em;
       z-index: 0;
     }
 
     .divider {
-      margin-bottom: 15px;
-      width: 30px;
-      height: 5px;
+      margin-bottom: 1em;
+      width: 2.5em;
+      height: .4em;
     }
 
     p {
+      font-size: .8em;
       color:azure;
     }
   }
@@ -516,20 +517,27 @@ color: #fff;
 
 @media screen and (max-width: 1200px) {
   .main-container h1 {
-    font-size: 5em;
+    font-size: 4.7em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   .main-container h3 {
-    font-size: 1em;
+    font-size: 1.2em;
+    margin-bottom: .6em;
   }
+
   .card-projects {
-    display: flex;
-    flex-wrap: wrap;
-    height: 200px;
-    max-width: 250px;
-    margin-bottom: 1px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    height: 11em;
+    max-width: 14em;
+    margin-bottom: 4em;
+  }
+
+  .projects-footer {
+    margin-top: 4em;
+    padding: 9em;
   }
 
   .card-text {
@@ -599,7 +607,7 @@ color: #fff;
   }
 }
 
-
+ 
 
 
   /* .card-projects {
