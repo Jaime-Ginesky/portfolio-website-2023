@@ -155,19 +155,62 @@ body {
     #theme {
       width: 100vw;
       height: 100vh;
-    }
-  
-   .container-about {
+    }   
+    .container-about {
     display:flex;
     justify-content: center;
     align-items:stretch;
-    flex-wrap: wrap;
-    /* flex-grow: 1; */
+    flex-wrap: wrap; 
+    }
+   
+   
+
+   /* .wrapper img {
+    display:flex;
+    justify-self: left;
+    align-content: center;
+    width: 10rem;
+    max-width: 100%;
+   } */
+
+   .auto-grid {
+    --auto-grid-min-size: 20rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: .5rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    /* font-size: 1rem; */
+    border: 1px solid #161615;
+    color:#0e0f02;
+    height: 15rem;
+    margin-bottom: 1rem;
    }
 
-   img {
-    margin: .5em;
-   }
+    .wrapper {
+      max-width: 60rem;
+      /* margin: 0 auto; */
+      padding: 0 .3rem;
+      /* border-style: 1px solid #161615;; */
+       img {
+        display:flex;
+        justify-self: left;
+        align-content: center;
+        width: 10rem;
+        max-width: 100%;
+       }
+      p {
+        font-size: .6rem;
+      }
+    }
+
+    .skill-style {
+      padding: .1rem .4rem;
+      text-align: center;
+      font-size: .5rem;
+      line-height: .1rem;
+     }
 
 
     /* background/text in dark mode */
@@ -183,6 +226,12 @@ body {
   .card-text {
     font-family: "Poppins", sans-serif;
     font-size: .8rem;
+  }
+
+  .card-body-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
   }
   /* main container and slide down */
   .main-container {
@@ -516,6 +565,12 @@ color: #fff;
 
 }
 
+/* @media screen and (max-width: 400px) {
+  .img-fluid {
+    max-width: 40rem;
+  }
+} */
+
 @media screen and (max-width: 1200px) {
   
   ul li a,
@@ -591,14 +646,26 @@ color: #fff;
   .main-container h2 {
     font-size: 1em;
   }
-  
-  .card {
-    width: .5em;
-    margin: 2em;
-  }
+  /* .card {
+    max-width: 29rem;
+    max-height: 14rem;
+  } */
   .card-text {
-    font-size: .7em;
+    font-size: .5em;
   }
+
+  .img-fluid {
+    max-width: 9rem;
+  }
+  /* .skill-list {
+    font-size: .5em;
+    line-height: .1em;
+  }
+
+  .skills-cards .card {
+    max-width: 13rem;
+    height: 10rem;
+  } */
 
 /* 
   .line {
@@ -612,11 +679,11 @@ color: #fff;
     margin-bottom: 1px;
   } */
 
-  img {
+  /* img {
     width: 100%;
     height: auto;
     margin-left: 1em;
-  }
+  } */
 
   .navigation-container {
     padding: .6em;
