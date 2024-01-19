@@ -174,36 +174,43 @@ body {
    } */
 
    .auto-grid {
-    --auto-grid-min-size: 20rem;
+    --auto-grid-min-size: 17rem;
 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-    grid-gap: .5rem;
-    padding: 1rem 1rem;
+    grid-gap: .3rem;
+    padding: 2.5rem 1rem;
     text-align: center;
     /* font-size: 1rem; */
     border: 1px solid #161615;
     color:#0e0f02;
     height: 15rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
    }
 
     .wrapper {
-      max-width: 60rem;
+      max-width: 40rem;
       /* margin: 0 auto; */
-      padding: 0 .3rem;
+      padding: 0 .4rem;
       /* border-style: 1px solid #161615;; */
-       img {
-        display:flex;
-        justify-self: left;
-        align-content: center;
-        width: 10rem;
-        max-width: 100%;
-       }
-      p {
-        font-size: .6rem;
-      }
     }
+    .wrapper img {
+      max-width: 20rem;
+      justify-self: center;
+    }
+    img {
+      display: flex;
+      justify-self: right;
+      flex-shrink: unset;
+      margin: .4rem .5rem;
+      width: 10rem;
+      max-width: 100%;
+     }
+
+     .card-text {
+      font-size: .5rem;
+      margin-top: .5rem;
+      }
 
     .skill-style {
       padding: .1rem .4rem;
@@ -223,10 +230,10 @@ body {
   .dark-mode-theme .navigation-container {
     background:#161615;
   }
-  .card-text {
+  /* .card-text {
     font-family: "Poppins", sans-serif;
     font-size: .8rem;
-  }
+  } */
 
   .card-body-image {
     display: grid;
@@ -291,10 +298,10 @@ body {
 color: #fff;
 }
 
-.card-box {
+/* .card-box {
   width: 40rem; 
   max-height:18rem;
-}
+} */
   
 
     /* all footer css  */
@@ -589,14 +596,14 @@ color: #fff;
     font-size: 1.2em;
     margin-bottom: .6em;
   }
-
+/* 
   .skill-list h2 {
     margin-bottom: .3em;
   }
 
   .skill-list {
     margin-bottom: .2em;
-  }
+  } */
 
   .card-projects {
     /* display: flex;
@@ -646,17 +653,31 @@ color: #fff;
   .main-container h2 {
     font-size: 1em;
   }
+
+
+  .wrapper img {
+    max-width: 10rem;
+    /* justify-self: center; */
+  }
+  .auto-grid img {
+    display: flex;
+    justify-self: flex-start;
+    /* flex-shrink: unset; */
+    margin: .4rem 0;
+    width: 5rem;
+    max-width: 100%;
+   }
   /* .card {
     max-width: 29rem;
     max-height: 14rem;
   } */
-  .card-text {
+  /* .card-text {
     font-size: .5em;
   }
 
   .img-fluid {
     max-width: 9rem;
-  }
+  } */
   /* .skill-list {
     font-size: .5em;
     line-height: .1em;
