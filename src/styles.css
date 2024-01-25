@@ -85,22 +85,24 @@ body {
 
   /* footer and footer links */
   footer {
-    font-size: calc(1.3vw + .6rem);
+    font-size: calc(1.3vw + .4rem);
     text-align: center;
     margin-top: 3rem;
     /* font-size: .8em; */
     background-color: var(--nav-bg-color);
     padding: 8rem;
   }
-  .dark-mode-theme footer {
+  /* .dark-mode-theme footer {
     padding: 8em;
-  }
+  } */
 
   /* footer buttons */
 .button-link {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: nowrap;
+ 
 }
 
 .button-link a:hover {
@@ -234,7 +236,7 @@ body {
    }
    .slide-down h2 {
     color:var(--nav-bg-color);
-    font-size: var(--font-size-small);
+    font-size: calc(1vw + .2rem);
     /* font-size: .8rem; */
     animation:2s slide-down 2s forwards;
     transform:translateY(-100%);
@@ -282,7 +284,7 @@ color: var(--nav-base-color);
     color: var(--nav-base-color);
     height: 9em;
     margin: 1rem 1rem;
-    font-size: calc(.8vw + .7rem);
+    font-size: calc(.8vw + .4rem);
     /* font-size: calc(.2vw + 1rem); */
    }
 
@@ -343,7 +345,7 @@ color: var(--nav-base-color);
     padding: .7rem;
     text-decoration: none;
     color:var(--primary-bg-color);
-    font-size: 2.5rem; 
+    font-size: 4rem; 
     margin-bottom: 2em;
   }
   
@@ -351,10 +353,10 @@ color: var(--nav-base-color);
     color:var(--pop-highlight-color);
   }
   .main-container .contact-container h1 {
-    margin-top: 8rem;
+    margin: 7rem;
     color:var(--nav-bg-color);
     letter-spacing: .4rem;
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 600;
     font-family: 'Abril Fatface';
     }
@@ -460,16 +462,14 @@ color: var(--nav-base-color);
 .card-projects {
   overflow: hidden;
   position: relative;
-  flex: 1 1 auto; 
-  max-width: 15rem;
-  max-height: 10rem; 
-  height: 11rem;
+  flex: 1 1 auto;  
   width: 100%;
-  /* margin: 7rem 3rem; */
-  /* margin: calc(.6vw + 1rem); */
+  max-width: 16rem;
+  /* max-height: 14rem;  */
+  height: 10rem;
+  /* width: min(9rem, 70%);  */
   margin: 1rem;
-  /* width: clamp(2rem, 100vw, 300px);
-  height: clamp(.5rem, 100vh, 200px); */
+  /* height: clamp(9rem, 100vh, 500px); */ 
  
 
 
