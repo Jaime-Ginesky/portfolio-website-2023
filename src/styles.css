@@ -178,9 +178,12 @@ body {
            text-decoration:none;
            color: var(--pop-highlight-color);
          }
+
+
   .dark-mode-theme .navigation-container {
           background:var(--nav-bg-color);
         }
+
 
          /* home page headings */
   .main-container h3 {
@@ -325,11 +328,11 @@ color: var(--nav-base-color);
 
   /* contact page css */
   .main-container .contact a {
-    display: inline-block;
-    padding: .2rem;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color:var(--primary-bg-color);
-    font-size: 6rem; 
+    font-size: calc(4vw + .7rem);
     margin-bottom: 1em;
   }
   
@@ -337,13 +340,17 @@ color: var(--nav-base-color);
     color:var(--pop-highlight-color);
   }
   .main-container .contact-container h1 {
-    margin: 7rem;
-    color:var(--nav-bg-color);
-    letter-spacing: .4rem;
-    font-size: 6rem;
-    font-weight: 600;
+    color: var(--nav-bg-color);
+    letter-spacing: 0.2em;
+    font-weight: 200;
     font-family: 'Abril Fatface';
+    font-size: calc(6vw + .7rem);
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 8rem;
     }
+
 
 
   .dark-mode-theme .main-container .contact a {

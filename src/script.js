@@ -8,6 +8,7 @@ window.onload = () => {
 }
 
 
+
 // Function to create Dark/Light Mode button
 const enableDarkMode = () => {
     theme.classList.add("dark-mode-theme");
@@ -35,6 +36,9 @@ toggleBtn.addEventListener("click", (e) => {
         disableDarkMode();
     }
 });
+
+
+
 
 
 
