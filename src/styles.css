@@ -157,7 +157,7 @@ body {
 
   .nav-list .nav-item .nav-link-active,
   .nav-list .nav-item button {
-    font-size: calc(.6vw + .3rem);
+    font-size: calc(.6vw + .2rem);
        display: flex;
        flex-wrap: nowrap;
         position:relative;
@@ -514,6 +514,9 @@ color: var(--nav-base-color);
 
 @media (min-width:1100px) {
  
+  .nav-list .nav-item {
+    padding: .6em 4em;
+  }
 
   .auto-grid .skill-style {
     --auto-grid-min-size:  15rem;
