@@ -542,6 +542,10 @@ color: var(--nav-base-color);
   margin-bottom: .8em;
  }
 
+.main-container .contact-container h1 {
+  font-size: 4em;
+ }
+
 
 }
 
