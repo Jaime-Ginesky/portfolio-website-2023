@@ -330,7 +330,8 @@ color: var(--nav-base-color);
     color:var(--primary-bg-color);
     font-size: calc(4vw + 3em);
     margin-bottom: 3em;
-    padding: max(.5em, 2%);
+    
+    /* padding: max(.5em, .2em); */
   }
   
   .main-container .contact a:hover {
@@ -339,9 +340,10 @@ color: var(--nav-base-color);
   .main-container .contact-container h1 {
     color: var(--nav-bg-color);
     letter-spacing: 0.2em;
+    max-width: 15em;
     font-weight: 200;
     font-family: 'Abril Fatface';
-    font-size: calc(6vw + .7rem);
+    font-size: calc(6vw + .3rem);
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
