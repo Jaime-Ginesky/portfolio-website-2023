@@ -10,7 +10,6 @@
  html {
   font-size: max(min(0.5vw, .2em), 1rem);
   box-sizing: border-box;
-  background-color: var(--nav-bg-color);
   }
 
 .dark-mode-theme html {
