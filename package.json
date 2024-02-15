@@ -15,8 +15,6 @@
   "bugs": {
     "url": "https://github.com/Jaime-Ginesky/portfolio-website-2023/issues"
   },
-  "homepage": "https://github.com/Jaime-Ginesky/portfolio-website-2023#readme",
-  "dependencies": {
-    "lightbox2": "^2.11.4"
-  }
+  "homepage": "https://github.com/Jaime-Ginesky/portfolio-website-2023#readme"
+ 
 }
