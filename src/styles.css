@@ -216,7 +216,7 @@ body {
   
    .slide-down {
     overflow: hidden;
-    padding-bottom: 2em; 
+    padding-bottom: .2em; 
     text-align: center;
 }
    
@@ -239,7 +239,7 @@ body {
 }
 
 .dark-mode-theme .main-container h3{ 
-  padding: .8em;
+  /* padding: .8em; */
   color: var(--nav-base-color);
 }
 
@@ -261,7 +261,7 @@ color: var(--nav-base-color);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
     grid-gap: .1em;
-    padding: 1rem 1rem;
+    padding: .8rem .7rem;
     align-content: center;
     text-align: center;
     border: 2px solid var(--nav-bg-color);
@@ -271,6 +271,7 @@ color: var(--nav-base-color);
    }
 
      .home-img {
+      position: relative;
       width: min(2vw + 7rem);
       height: 100%;
       display:flex;
@@ -296,6 +297,10 @@ color: var(--nav-base-color);
 
       
        .card-text {
+        font-family: "Poppins", sans-serif;
+        line-height: 2;
+        color: var(--primary-text-color);
+        text-align: center;
         width: max(7vw + 40em);
         font-size: var(--font-size-small);
       }
@@ -305,7 +310,7 @@ color: var(--nav-base-color);
         border: 1px solid var(--secondary-text-color);
       }
       .dark-mode-theme .container-about  {
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
       }
       .dark-mode-theme .card-text,
       .dark-mode-theme .skill-style,
@@ -362,10 +367,21 @@ color: var(--nav-base-color);
       color:var(--pop-highlight-color);
     }
    
+ h1.projects-container {
+  color: var(--nav-bg-color);
+  letter-spacing: .7rem;
+  font-weight: var(--header-font-weight);
+  font-family: var(--header-font-family);
+  font-size: calc(6vw + .7rem);
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-align: center;
+ }
 
  footer.projects-footer {
-  margin-top: calc(10vw + .1rem);
-  padding: 8em;
+  /* margin-top: calc(10vw + .1rem); */
+  padding: 3.4em;
   background-color: var(--nav-bg-color);
  }
  .source-link {
@@ -374,7 +390,7 @@ color: var(--nav-base-color);
 
 .dark-mode-theme .projects-footer {
   background:var(--nav-bg-color);
-  padding: 9em;
+  /* padding: 9em; */
 }
     /* "GO" buttons */
   .glow-button {
@@ -446,7 +462,7 @@ color: var(--nav-base-color);
   width: 30%;
   height: min(.9vw + 10rem);
   width: min(.5vw + 18rem); 
-  margin: 1rem;
+  margin: .3rem;
  
  .photo-container {
     position: absolute;
