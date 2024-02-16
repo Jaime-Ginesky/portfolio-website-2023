@@ -138,11 +138,12 @@ body {
   .nav-list {
     display: flex;
     flex-direction: row; 
+    flex-wrap: nowrap;
   }
 
 
    .nav-item {
-    padding: .8em 1em;
+    padding: .8em .6em;
     list-style: none;
     font-family: sans-serif;
     color: var(--nav-base-color);
