@@ -345,7 +345,7 @@ color: var(--nav-base-color);
     width: 90vw;
     justify-content: center;
     flex-wrap: nowrap;
-    margin: 14rem 2rem;
+    margin: 11rem 2rem;
     }
 
 
@@ -354,7 +354,7 @@ color: var(--nav-base-color);
     color:var(--nav-base-color);
   }
   .dark-mode-theme  .contact-container h1 {
-    padding-bottom: .5em;
+    /* padding-bottom: .5em; */
     color:var(--pop-highlight-color);
     }
 
