@@ -356,7 +356,7 @@ color: var(--nav-base-color);
     font-family: 'Abril Fatface';
     font-size: calc(2.5vw + .7em);
     display: flex;
-    width: 100vw;
+    width: 90vw;
     justify-content: center;
     flex-wrap: nowrap;
     margin: 11rem 2rem 15rem;
