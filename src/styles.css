@@ -82,7 +82,7 @@ body {
   /* footer and footer links */
   footer {
     position: relative;
-    font-size: calc(1vw + .3rem);
+    font-size: calc(.6vw + .3rem);
     text-align: center;
     background-color: var(--nav-bg-color);
     padding: 3rem;
@@ -251,7 +251,6 @@ body {
 }
 
 .dark-mode-theme .main-container h3{ 
-  /* padding: .8em; */
   color: var(--nav-base-color);
 }
 
@@ -355,7 +354,7 @@ color: var(--nav-base-color);
     letter-spacing: 0.2em;
     font-weight: 300;
     font-family: 'Abril Fatface';
-    font-size: calc(2vw + .8em);
+    font-size: calc(2.5vw + .8em);
     display: flex;
     width: 90vw;
     justify-content: center;
@@ -392,7 +391,6 @@ color: var(--nav-base-color);
  footer.projects-footer {
   padding: 3.4em;
   background-color: var(--nav-bg-color);
-  margin-top: .5rem;
  }
 
 .dark-mode-theme .projects-container {
@@ -439,7 +437,7 @@ color: var(--nav-base-color);
 
   &:hover {
     & ~ .line .slide {
-      transform: translateY(0);
+      transform: translateX(0);
     }
 
     .slide {
@@ -468,8 +466,6 @@ color: var(--nav-base-color);
 .card-projects {
   overflow: hidden;
   position: relative;
-  height: 10vh;
-  width: 30%;
   height: min(.9vw + 10rem);
   width: min(.5vw + 18rem); 
   margin: .3rem;
@@ -485,7 +481,7 @@ color: var(--nav-base-color);
     background-size: cover;
     background-position: center;
     transform-origin: bottom right;
-    transition: .2s;
+    transition: .3s;
     border: 1px solid var(--nav-bg-color);
   
 
@@ -509,7 +505,7 @@ color: var(--nav-base-color);
     background: rgba(0, 0, 0, 0.5);
     padding: 1em;
     will-change: transform;
-    transform: translateY(0);
+    transform: translateX(0);
     transition: all 0.275s ease-in-out, visibility 0s 0.175s;
 
     h2 {
@@ -560,15 +556,12 @@ color: var(--nav-base-color);
   margin: 3em;
 }
 
-
- .contact a {
-  margin-bottom: .8em;
- }
-
- .contact-container h1 {
-  font-size: 8rem;
- }
-
+.footer-text{
+  font-size: .5rem;
+}
+.projects-container {
+margin: 1em;
+}
 
 }
 
