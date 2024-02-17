@@ -385,7 +385,7 @@ color: var(--nav-base-color);
   justify-content: center;
   flex-wrap: nowrap;
   text-align: center;
-  margin: .8em;
+  margin: .4em;
  }
 
  footer.projects-footer {
